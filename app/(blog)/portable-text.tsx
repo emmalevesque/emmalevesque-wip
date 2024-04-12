@@ -29,6 +29,9 @@ export default function CustomPortableText({
       h6: ({ children }) => (
         <h6 className="mb-1 text-xs font-semibold">{children}</h6>
       ),
+      cursive: ({ children }) => (
+        <span className='font-script text-red-600'>{children}</span>
+      )
     },
     marks: {
       link: ({ children, value }) => {
