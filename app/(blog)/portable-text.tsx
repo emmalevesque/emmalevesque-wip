@@ -23,11 +23,14 @@ export default function CustomPortableText({
 }) {
   const components: PortableTextComponents = {
     block: {
+      h3: ({ children }) => (
+        <h3 className="mb-1 text-xs font-semibold">{children}</h3>
+      ),
+      h4: ({ children }) => (
+        <h4 className="mb-2 text-sm font-semibold">{children}</h4>
+      ),
       h5: ({ children }) => (
         <h5 className="mb-2 text-sm font-semibold">{children}</h5>
-      ),
-      h6: ({ children }) => (
-        <h6 className="mb-1 text-xs font-semibold">{children}</h6>
       ),
       cursive: ({ children }) => (
         <span className='font-script text-red-600'>{children}</span>

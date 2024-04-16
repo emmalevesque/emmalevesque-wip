@@ -49,8 +49,16 @@ export default defineType({
           type: "block",
           styles: [
             {
-              title: "h1",
-              value: "h1",
+              title: "Heading 3",
+              value: "h3",
+            },
+            {
+              title: 'Heading 4',
+              value: 'h4',
+            },
+            {
+              title: 'Heading 5',
+              value: 'h5',
             },
             {
               title: 'Cursive',
